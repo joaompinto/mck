@@ -1,0 +1,11 @@
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+    name: my-pvc
+spec:
+    accessModes:
+        - ReadWriteMany
+    storageClassName: rook-ceph-block
+    resources:
+        requests:
+            storage: 1Gi
